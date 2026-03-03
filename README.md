@@ -52,3 +52,69 @@ Known Bugs / Transparent Notes
 “Anonymous choice via questionnaire”: the choice is computed client-side, and the voter is not shown which candidate was selected. However, anyone inspecting the transaction data can infer the candidateId (public blockchain). This provides UX-level anonymity only.
 
 Results sorting is done on-chain using a simple algorithm (intended for a small number of candidates).
+
+Note:
+These instructions explain how to run the project using the Windows Command Prompt (CMD).
+You will need three separate CMD windows. Please follow the steps in order.
+
+Step 1: Start the Local Hardhat Network
+
+Open a CMD window.
+
+Navigate to the Hardhat directory:
+
+cd elections-dapp/hardhat
+
+Install dependencies:
+
+npm install
+
+Start the local Hardhat node:
+
+npx hardhat node
+
+Note:
+At this point, you should see output similar to:
+
+Account #0: 0xf39Fd6...
+
+This means the local blockchain is running.
+
+Step 2: Deploy the Smart Contracts
+
+Open a second CMD window.
+
+Navigate again to the Hardhat directory:
+
+cd elections-dapp/hardhat
+
+Deploy the contracts to the local network:
+
+npx hardhat run scripts\deploy.js --network localhost
+
+Note:
+You should see output similar to:
+
+Contract deployed to: 0x...
+
+This confirms the contracts were deployed successfully.
+
+Step 3: Run the Frontend
+
+Open a third CMD window.
+
+Navigate to the frontend directory:
+
+cd elections-dapp/frontend
+
+Install frontend dependencies:
+
+npm install
+
+Start the frontend:
+
+npm start
+
+If that does not work, run:
+
+npm run dev
