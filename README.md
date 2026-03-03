@@ -53,7 +53,7 @@ the choice is computed client-side, and the voter is not shown which candidate w
 
 Results sorting is done on-chain using a simple algorithm (intended for a small number of candidates).
 
-Note:
+# Note - How to Install:
 These instructions explain how to run the project using the Windows Command Prompt (CMD).
 You will need three separate CMD windows. Please follow the steps in order.
 
