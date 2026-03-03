@@ -47,7 +47,7 @@ After the voting window closes, ranked results are displayed.
 
 The voter claims and automatically receives BAL tokens once voting has ended.
 
-Known Bugs / Transparent Notes (recommended for slide 2)
+Known Bugs / Transparent Notes 
 
 “Anonymous choice via questionnaire”: the choice is computed client-side, and the voter is not shown which candidate was selected. However, anyone inspecting the transaction data can infer the candidateId (public blockchain). This provides UX-level anonymity only.
 
